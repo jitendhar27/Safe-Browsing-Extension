@@ -4,7 +4,7 @@ function checkUrlSafety() {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       const url = tabs[0].url;
   
-      fetch(`https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyDFIog35gDykUqAhomYUBHdsevEuFrl2H0`, {
+      fetch(`https://safebrowsing.googleapis.com/v4/threatMatches:find?key=API_KEY`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
