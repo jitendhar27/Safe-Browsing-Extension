@@ -1,0 +1,9 @@
+# Ignore sensitive files
+*.key
+*.env
+
+# Ignore system files
+.DS_Store
+
+# Ignore unnecessary Chrome extension files
+*.log
